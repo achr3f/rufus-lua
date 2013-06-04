@@ -43,7 +43,8 @@ module Lua
       Dir.glob('/opt/local/lib/liblua*.so') +
       Dir.glob('/usr/lib/liblua*.dylib') +
       Dir.glob('/usr/local/lib/liblua*.dylib') +
-      Dir.glob('/opt/local/lib/liblua*.dylib'))
+      Dir.glob('/opt/local/lib/liblua*.dylib') +
+      Dir.glob('/app/liblua*.so'))
 
     begin
 
