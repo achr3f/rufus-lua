@@ -41,9 +41,6 @@ module Lua
       Dir.glob('/usr/lib/liblua*.so') +
       Dir.glob('/usr/local/lib/liblua*.so') +
       Dir.glob('/opt/local/lib/liblua*.so') +
-      Dir.glob('/usr/lib/liblua*.dylib') +
-      Dir.glob('/usr/local/lib/liblua*.dylib') +
-      Dir.glob('/opt/local/lib/liblua*.dylib') +
       Dir.glob('/app/liblua*.so'))
 
     begin
@@ -52,7 +49,7 @@ module Lua
 
     rescue LoadError => le
       raise(
-        "didn't find the lua dylib on your system, " +
+        "didn't find the lua dylib on your system  " +
         "see http://rufus.rubyforge.org/rufus-lua/ to learn how to get it"
       )
     end
